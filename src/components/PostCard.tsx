@@ -34,16 +34,6 @@ export function PostCard({ post, onLike }: PostCardProps) {
 									{post.timestamp}
 								</span>
 							</div>
-							<button className="text-gray-500 hover:text-gray-700 ml-2 flex-shrink-0">
-								<span className="sr-only">More options</span>
-								<svg
-									className="h-5 w-5"
-									fill="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-								</svg>
-							</button>
 						</div>
 
 						<p className="mt-2 text-gray-900 break-words">{post.content}</p>
@@ -53,7 +43,7 @@ export function PostCard({ post, onLike }: PostCardProps) {
 								<img
 									src={post.image}
 									alt="Post content"
-									className="w-full h-auto object-cover"
+									className="w-full h-[300px] object-cover"
 									loading="lazy"
 								/>
 							</div>
