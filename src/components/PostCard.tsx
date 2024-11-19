@@ -43,7 +43,7 @@ export function PostCard({ post, onLike }: PostCardProps) {
 								<img
 									src={post.image}
 									alt="Post content"
-									className="w-full h-[300px] object-cover"
+									className="w-full h-auto object-cover"
 									loading="lazy"
 								/>
 							</div>
@@ -58,16 +58,16 @@ export function PostCard({ post, onLike }: PostCardProps) {
 									className={cn(
 										"h-5 w-5 transition-colors",
 										post.isLiked
-											? "fill-red-500 text-red-500"
-											: "text-gray-500 group-hover:text-red-500"
+											? "fill-blue-500 text-blue-500"
+											: "text-gray-500 group-hover:text-blue-500"
 									)}
 								/>
 								<span
 									className={cn(
 										"text-sm",
 										post.isLiked
-											? "text-red-500"
-											: "text-gray-500 group-hover:text-red-500"
+											? "text-blue-500"
+											: "text-gray-500 group-hover:text-blue-500"
 									)}
 								>
 									{post.likes}

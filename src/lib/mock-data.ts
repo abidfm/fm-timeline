@@ -3,7 +3,6 @@ export interface Post {
 	author: {
 		name: string;
 		username: string;
-		avatar: string;
 	};
 	content: string;
 	image?: string;
@@ -14,58 +13,61 @@ export interface Post {
 
 export const mockPosts: Post[] = [
 	{
-		id: "1",
+		id: "5",
 		author: {
-			name: "Bryan",
-			username: "bryan",
-			avatar:
-				"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+			name: "Abid",
+			username: "abid_driver",
 		},
-		content: "Bryan completed a perfect trip!",
-		image:
-			"https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-		likes: 110,
+		content:
+			"🎉 Abid completed a perfect trip with zero safety issues. Amazing job!",
+		likes: 156,
 		isLiked: false,
-		timestamp: "2h ago",
+		timestamp: "1h ago",
 	},
 	{
-		id: "2",
+		id: "6",
 		author: {
-			name: "Sarah",
-			username: "sarah_codes",
-			avatar:
-				"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+			name: "Sachin",
+			username: "sachin_driver",
 		},
-		content: "Just deployed my first React app! 🚀",
-		likes: 89,
+		content: "🌙 Sachin just finished a safe night drive. Keep it up!",
+		likes: 98,
 		isLiked: false,
-		timestamp: "4h ago",
+		timestamp: "3h ago",
 	},
 	{
-		id: "3",
+		id: "7",
 		author: {
-			name: "Alex",
-			username: "alex_dev",
-			avatar:
-				"https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+			name: "Tarek",
+			username: "tarek_driver",
 		},
-		content: "Beautiful sunset at the beach today! 🌅",
-		image:
-			"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+		content:
+			"🚛 Tarek completed an exceptionally long trip without any safety issues. Great work!",
 		likes: 234,
+		isLiked: false,
+		timestamp: "5h ago",
+	},
+	{
+		id: "8",
+		author: {
+			name: "Avi",
+			username: "avi_driver",
+		},
+		content:
+			"🔧 Avi reported an incident. Fairmatic is on it and taking good care of him.",
+		likes: 45,
 		isLiked: false,
 		timestamp: "6h ago",
 	},
 	{
-		id: "4",
+		id: "9",
 		author: {
-			name: "John",
-			username: "john_doe",
-			avatar: "",
+			name: "Nir",
+			username: "nir_driver",
 		},
-		content: "I'm learning to code!",
-		image: "",
-		likes: 0,
+		content:
+			"🏆 Nir has climbed to 1st place in the Fleet ranking! Congratulations!",
+		likes: 312,
 		isLiked: false,
 		timestamp: "8h ago",
 	},
