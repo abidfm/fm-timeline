@@ -20,7 +20,7 @@ export function PostCard({ post, onLike, onShowLikes }: PostCardProps) {
 							alt={post.author.name}
 							className="h-full w-full object-cover"
 						/>
-						<Avatar.Fallback className="h-full w-full  flex items-center justify-center text-[#004682]-500 font-bold ">
+						<Avatar.Fallback className="h-full w-full  flex items-center justify-center text-white bg-[#0057A3] font-bold ">
 							{post.author.name[0]}
 						</Avatar.Fallback>
 					</Avatar.Root>
