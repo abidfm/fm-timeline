@@ -29,9 +29,9 @@ export default function App() {
 	const selectedPost = posts.find((post) => post.id === selectedPostId);
 
 	return (
-		<div className="w-full min-h-screen bg-white sm:bg-gray-100">
-			<div className="max-w-lg mx-auto bg-white min-h-screen">
-				<main className="pb-6 pt-6">
+		<div className="w-full min-h-screen">
+			<div className="max-w-lg mx-auto bg-[#F8F9FA] min-h-screen">
+				<main className="pb-6 pt-6 bg-[#F8F9FA]">
 					{posts.map((post) => (
 						<PostCard
 							key={post.id}
