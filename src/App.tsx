@@ -31,7 +31,7 @@ export default function App() {
 	return (
 		<div className="w-full min-h-screen bg-white sm:bg-gray-100">
 			<div className="max-w-lg mx-auto bg-white min-h-screen">
-				<main className="pb-16 pt-16">
+				<main className="pb-6 pt-6">
 					{posts.map((post) => (
 						<PostCard
 							key={post.id}
