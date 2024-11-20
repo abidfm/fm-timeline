@@ -7,7 +7,7 @@ interface AnimationCardProps {
 
 export const AnimationCard: FC<AnimationCardProps> = ({ url, text }) => {
 	return (
-		<div className="flex flex-col bg-gray-50 mt-4 border border-light-gray-500 rounded-lg items-center ">
+		<div className="flex flex-col mt-4 rounded-lg items-center ">
 			{url && (
 				<img
 					src={url}
