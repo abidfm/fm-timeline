@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { LikesDialog } from "./components/LikesDialog";
 import { PostCard } from "./components/PostCard";
 import { mockPosts } from "./lib/mock-data";
 
 export default function App() {
 	const [posts, setPosts] = useState(mockPosts);
+	const [selectedPostId, setSelectedPostId] = useState<string | null>(null);
 
 	const handleLike = (postId: string) => {
 		setPosts(
@@ -20,18 +22,33 @@ export default function App() {
 		);
 	};
 
+	const handleShowLikes = (postId: string) => {
+		setSelectedPostId(postId);
+	};
+
+	const selectedPost = posts.find((post) => post.id === selectedPostId);
+
 	return (
 		<div className="w-full min-h-screen bg-white sm:bg-gray-100">
 			<div className="max-w-lg mx-auto bg-white min-h-screen">
-				<header className="sticky top-0 z-10 bg-white border-b border-gray-200">
-					<div className="px-4 py-3 flex items-center"></div>
-				</header>
-
-				<main className="pb-16">
+				<main className="pb-16 pt-16">
 					{posts.map((post) => (
-						<PostCard key={post.id} post={post} onLike={handleLike} />
+						<PostCard
+							key={post.id}
+							post={post}
+							onLike={handleLike}
+							onShowLikes={handleShowLikes}
+						/>
 					))}
 				</main>
+
+				{selectedPost && (
+					<LikesDialog
+						isOpen={!!selectedPostId}
+						onClose={() => setSelectedPostId(null)}
+						likedBy={selectedPost.likedBy}
+					/>
+				)}
 			</div>
 		</div>
 	);
