@@ -46,10 +46,10 @@ export function PostCard({ post, onLike, onShowLikes }: PostCardProps) {
 						{/* Animation */}
 						{post.animation && <AnimationCard url={post.animation} text={""} />}
 
-						<div className="mt-3 flex items-center space-x-2">
+						<div className="mt-3 flex items-center space-x-1">
 							<button
 								onClick={() => onLike(post.id)}
-								className="group flex items-center space-x-2 px-3 py-1.5 rounded-full hover:bg-gray-100 transition-colors duration-200 touch-manipulation"
+								className="group flex items-center py-1.5 rounded-full hover:bg-gray-100 transition-colors duration-200 touch-manipulation"
 							>
 								<Heart
 									className={cn(

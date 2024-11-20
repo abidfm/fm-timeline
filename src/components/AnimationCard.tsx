@@ -7,15 +7,13 @@ interface AnimationCardProps {
 
 export const AnimationCard: FC<AnimationCardProps> = ({ url, text }) => {
 	return (
-		<div className="flex flex-col items-center gap-4 p-4">
+		<div className="flex flex-col bg-gray-50 mt-4 border border-light-gray-500 rounded-lg items-center ">
 			{url && (
-				<div className="w-24 h-24 flex items-center justify-center">
-					<img
-						src={url}
-						alt="animation"
-						className="w-full h-full object-contain"
-					/>
-				</div>
+				<img
+					src={url}
+					alt="animation"
+					className="w-full h-full  object-contain"
+				/>
 			)}
 			<p className="text-center">{text}</p>
 		</div>
