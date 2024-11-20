@@ -12,7 +12,7 @@ interface PostCardProps {
 
 export function PostCard({ post, onLike, onShowLikes }: PostCardProps) {
 	return (
-		<article className="mx-4 border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 mb-6 bg-blue-50">
+		<article className="mx-6 border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 mb-6 bg-blue-50">
 			<div className="p-3 sm:p-4">
 				<div className="flex items-start space-x-3">
 					<Avatar.Root className="h-10 w-10 shrink-0 bg-white rounded-full overflow-hidden border-2 border-light-gray-500">
